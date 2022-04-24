@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobility_app/theme/app_colors.dart';
+import 'package:mobility_app/utils/app_colors.dart';
 import 'package:mobility_app/theme/font_theme.dart';
 
 class AppThemeData {
