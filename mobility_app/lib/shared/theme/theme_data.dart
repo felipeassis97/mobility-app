@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mobility_app/utils/app_colors.dart';
-import 'package:mobility_app/theme/font_theme.dart';
+import 'package:mobility_app/shared/theme/font_theme.dart';
+import 'package:mobility_app/shared/utils/app_colors.dart';
 
 class AppThemeData {
   static ThemeData materialTheme(BuildContext context) {

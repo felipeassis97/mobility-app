@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:mobility_app/shared/utils/app_files.dart';
 import 'package:mobility_app/shared/widgets/buttons.dart';
 import 'package:mobility_app/shared/widgets/fields.dart';
-import 'package:mobility_app/utils/app_files.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -42,14 +42,18 @@ class _LoginScreenState extends State<LoginScreen> {
                   padding: const EdgeInsets.only(top: 24),
                   child: PrimaryButton(
                     label: 'Entrar',
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.popAndPushNamed(context, '/home');
+                    },
                   ),
                 ),
               ],
             ),
             CustomTextButton(
               label: 'Ainda não tem conta? Cadastre-se',
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, '/signup');
+              },
             )
           ],
         ),

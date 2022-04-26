@@ -43,5 +43,7 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>O Mobilty App precisa acessar sua localização enquanto você utiliza o aplicativo.</string>
 </dict>
 </plist>

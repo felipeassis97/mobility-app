@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mobility_app/features/session/login/login_screen.dart';
-import 'package:mobility_app/theme/theme_data.dart';
+import 'package:mobility_app/shared/routes/app_routes.dart';
+import 'package:mobility_app/shared/theme/theme_data.dart';
 
 class MobilityApp extends StatelessWidget {
   const MobilityApp({Key? key}) : super(key: key);
@@ -8,10 +8,10 @@ class MobilityApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Mobility App',
-      theme: AppThemeData.materialTheme(context),
-      debugShowCheckedModeBanner: false,
-      home: const LoginScreen(),
-    );
+        title: 'Mobility App',
+        theme: AppThemeData.materialTheme(context),
+        debugShowCheckedModeBanner: false,
+        initialRoute: '/',
+        routes: AppRoutes.routes(context));
   }
 }
